@@ -17,7 +17,7 @@ app.use("/api/auth", authRoutes)
 app.use("/api/url",urlRoutes)
 
 app.use("/check", (req, res) => {
-    res.json({ message: "Server Running")
+    res.json({ message: "Server Running"})
 })
 
 app.listen(process.env.PORT, () =>{
