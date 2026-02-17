@@ -16,6 +16,10 @@ const authRoutes = require('./routes/authRoutes')
 app.use("/api/auth", authRoutes)
 app.use("/api/url",urlRoutes)
 
+app.use("/check", (req, res) => {
+    res.json({ message: "Server Running")
+})
+
 app.listen(process.env.PORT, () =>{
     console.log(`Server has started at http://localhost:${process.env.PORT}`)
 
