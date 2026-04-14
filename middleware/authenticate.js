@@ -21,7 +21,7 @@ exports.authenticate = async (req, res, next) => {
 
         
         next();
-    } catch (error) {
+    } catch (error) { 
         res.status(500).json({success : false, message : "Something went wrong", error: error.message})
     }
 }
